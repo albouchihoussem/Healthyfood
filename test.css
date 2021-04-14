@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Poppins', sans-serif;
+}
+/*navbar*/
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+h2 {
+    color: rgba(44, 41, 41, 0.61);
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px rgb(121, 138, 138);
+}
+/*dark mood*/
+body.dark-theme{
+    background-color: #152028;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    color:rgb(255, 255, 255);
+  }
+  .dark-theme h1{
+    color: rgb(122, 182, 140);
+}
+.dark-theme p{
+    color: rgb(165, 165, 165);
+}
+/**/
+
+nav {
+    flex:1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li { 
+    display: inline-block;
+    margin-right: 20px;
+}
+nav a { text-decoration: none;
+    color: black;
+}
+/*animation navbar text*/
+.ml3 {
+    font-weight: 900;
+    font-size: 3.5em;
+  }
+/**/
+p{ 
+    color:#4e4e4e
+}
+.container{
+max-width: 1300px;
+margin: auto;
+padding-left: 25px;
+padding-right:25px;
+}
+.rownav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+   }
+.col-2 img {
+    max-width: 100%;
+    padding: 10px 0 ;
+    }
+    .col-2 h1{
+        font-size: 50px;
+       margin: 25px 0;
+    }
+    /*Bouttons*/
+    .bouton{
+    display: flex;
+    justify-content: space-around;
+    }
+    .wrap {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+    .btn {
+        text-decoration: none;
+        color: white;
+        padding: 10px 30px;
+        width: 140px;
+        height: 45px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 2.5px;
+        color: rgb(255, 255, 255);
+        background-color: #95c944;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.5s ease 0s;
+        cursor: pointer;
+        outline: none;
+        }
+      
+      .btn:hover {
+        background-color: #1f6234;
+        box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+        color: #fff;
+        transform: translateY(-7px);
+      }
+      /**/
+      .header {
+          background: radial-gradient(#ffffff,#dbdfde);
+      }
+      .header .row{
+      margin-top: 10px;
+      }
+/*Notre histoire*/
+h1{
+    color: rgba(36, 35, 35, 0.61);
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px rgb(121, 138, 138);
+    
+}
+
+.containerpresent{
+display: flex;
+align-items: center;
+margin: 10%;
+margin-top: 15px;
+}
+
+.healthyimage{
+	height: 20rem;
+	width: 20rem;
+	border-radius: 50%;
+	box-shadow: 0 0 25px 0 black;  
+	margin-right: 30px;
+    opacity:0.85;
+   
+}
+.healthyimage:hover{
+ 
+  opacity:1;
+}
+/**/
+
+
+/*Notre services*/
+
+
+
+
+
+/*cartes*/
+.cartesback {
+    background-image: url("images/background2.jpg");
+}
+.containercartes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    }
+    .cartimage{
+        margin-right: 20px;
+        margin-left: 20px;
+        position: relative;
+        overflow: hidden;
+       
+    }
+    .cartimage img{
+        width:300px ;
+        height:250px;
+    }
+    .add-cart {
+        position: absolute;
+        width: 100%;
+        background-color: #95c944;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        cursor: pointer;
+        text-align: center;
+        
+    }
+    
+    .cartimage:hover .cart-1,
+    .cartimage:hover .cart-2,
+    .cartimage:hover .cart-3,
+    .cartimage:hover .cart-4,
+    .cartimage:hover .cart-5,
+    .cartimage:hover .cart-6,
+    .cartimage:hover .cart-7,
+    .cartimage:hover .cart-8
+    {
+        bottom: 60px;
+        opacity: 0.75;
+        padding: 10px;
+        text-decoration: none;
+        
+    }
+
+
+
+ /*-------footer-------*/
+footer{
+    background-color: #232323;
+    color: #eee;
+    padding: 10px ;
+    flex-shrink: 0;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    right:0px;
+    height: 50%;
+    }
+    .main ul {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    
+    .conteneur {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    justify-items: flex-start;
+    font-size: 15px;
+    padding: 50px 0 100px;
+    }
+    
+    .bloc{
+        width: 25%;
+        margin: 0 30px;
+       
+    }
+    .bloc h3{
+        border-left: 3px solid gray;
+      height: 2%;
+    padding-left: 8px;
+    margin-bottom: 50px;
+    }
+    
+    
+    /* contact */
+    .form h3,
+    .contact h3,
+    .socialmedia h3 {
+        color: rgba(203, 204, 204, 0.89);
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    .contact p {
+        padding: 5px 0 ;
+        color: rgb(184, 184, 184);
+    }
+    /* Social media */
+    .socialmedia li {
+        list-style-type: none;
+    }
+    .socialmedia a {
+        color: #eee;
+        text-decoration: none;
+        
+    }
+    .socialmedia img{
+        width: 42px;
+        height: 42px;
+    }
+    
+    .copyright {
+        color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        
+    }
+    .formwidth input, textarea{
+         padding:15px;
+         width: 200px;
+         font-size: 15px;
+         margin-bottom: 20px;
+     }
+     .logofooter{
+         width: 20rem;
+     }  
+     
+     .bloc , .form a {
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+    font-weight: bold;
+    padding: 20px;
+}
+.lien{
+    padding: 0px 20px;
+    word-wrap: normal;
+    display: inline-block;
+}
+.prefooter img {
+width: 40rem;
+
+bottom: 0px;
+}
+.rowpre{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 10px;
+}
+.fas{
+    color: blue;
+    font-size: 20px;
+    margin-right: 5px;
+}
+   span{
+       color: white;
+   }
+
+
+
+
+    /*  #ffffff 
+- La couleur secondaire, utilisée pour les titres, les boutons, et autres éléments de navigation sera de référence : #1f6234
+- La troisième couleur, utilisée entre autre pour les à plats, sera de référence :  #95c944
+- Le quatrième couleur, utilisée sera de référence: #709833
+*/
