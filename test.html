@@ -4,14 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
+    <title>HealthyFood</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="test.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <script src="https://kit.fontawesome.com/e0d7e898b5.js" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="icon" href="images/fav.png" type="image/gif" sizes="16x16"> <!--favicon-->
+
+ 
+
 </head>
 <body>
-    <div class="header">
+<!-- Modalpanier -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="btton" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Panier</h4>
+      </div>
+      <div class="modal-body">
+
+       <div class="container-fluid produits-container my-5">
+
+<div class="row pb-5 ">
+
+      <div class="col-md-3 produits"><strong>Produit</strong></div>
+      <div class="col-md-2 produits-titre"> <strong>Nom</strong></div>
+      <div class="col-md-3 produits-prix"><strong>Prix</strong></div>
+      <div class="col-md-2 quantite"><strong>Quantité</strong></div>
+      <div class="col-md-2 subtotal"></div>
+
+</div>
+
+</div> 
+<div class="item-card">
+
+</div>
+<div class="total">
+
+</div>
+
+        </div>
+      <div class="modal-footer">
+        <button type="btton" class="btnn btn-default" data-dismiss="modal">Fermer</button>
+      <button type="btton" class="btnn btn-danger all" >Vider panier</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--modalpanier-->
+
+<div class="header">
         <div class="container">
             <div class="navbar">
                     <div class="logo">
@@ -19,17 +69,21 @@
                     </div>
                         <nav>
                              <ul>
-                                <li id="nightMode"> <a > <i class="far fa-moon"></i> </a></li> 
-                               <li> <a href="">Panier</a> </li>
-                            </ul>
-                         </nav>
-                 <img src="images/panier.png" width="30px" height="30px">
+                            
+                             <li class="cart"> <a data-toggle="modal" data-target="#myModal">
+                              <i class="fas fa-cart-plus"></i><span class="notif">0</span>
+                             </a> </li>  
+                             <li><div id="nightMode"> <a > <i class="far fa-moon"></i> </a></div></li>
+                             </ul>
+                        </nav> 
+                    
             </div>
 <!--Bouttons-->
             <div class="wrap">
-                  <a href="#histoire"class="btn">Histoire</a>
-                  <a href="#produits"class="btn">Produits</a>
-                 <a href="#services"class="btn">Services</a>
+                  <a href="#histoire"class="btnn">Histoire</a>
+                  <a href="#services"class="btnn">Services</a>
+                  <a href="#produits"class="btnn">Produits</a>
+                  <a href="#clients"class="btnn">Témoignages</a>
             </div>
 
          <div class="rownav">
@@ -44,13 +98,14 @@
     </div>
 </div>
 <!--notre histoire-->
-<div>
-          <h1 id = "histoire">Notre histoire</h1>
-         <img src="" alt="">  <!---->
+<div class="histoireback">
+         <span class= "textgold"> <h1 id = "histoire">Notre histoire</h1>
+          <img class="gold" src="images/golden.png" alt=""> </span>
+         
          <div class="containerpresent"> 
 
                 <div ><img class="healthyimage" src="images/healthyimage.jpg" alt="Image de l'agence"></div>
-                 <div class="paragraph"><p>« Plus qu'un simple restaurant, <b>Healthy Food</b> vous garanti des recettes healthy et bio. » <br>
+                 <div class="histoirepara"><p>« Plus qu'un simple restaurant, <b>Healthy Food</b> vous garanti des recettes healthy et bio. » <br>
                         Forts de plus de <b>3 années d'expérience</b> acquise aussi bien sur le marché Tunisien , les fondateurs de Healthy Food ne cessent de faire évoluer leur structure en collaboration avec leurs équipes et leur clientèle.
                         Notre offre de services s'articule autour de trois principes fondamentaux :
    
@@ -60,101 +115,204 @@
           </div>
  </div>
 
+<!--Nos services-->
+  <div class="backclient">
+    <span class="textgold"> <h1 id= "services">Nos services</h1><img class="gold" src="images/golden.png" alt=""></span>
+   <div class="prefooter">
+       <div class="rowpre">
+       <div class="col-1">
+           <h2 class="ml3">Téléchargez l'application mobile <b> Healthy food</b> <br> et profitez de nos services en ligne gratuitement </h2>
+       </div>
+       <div class="col-1"> <img src="images/pref.png" alt=""></div>
+   </div>
+   </div>
+   </div>
 <!--cartes-->
-
-
- <div class="cartesback">
-    <h1 id="produits">Nos produits</h1>
+<div class="cartesback">
+   <span class="textgold" > <h1 id="produits">Nos produits</h1>  <img class="gold" src="images/golden.png" alt=""> </span> 
 <div class="containercartes">
    <div class="cartimage">
-        <img src="images/2.jpeg" alt="">
-        <h3>Test</h3>
-        <h3>Prix</h3>
-         <a class="add-cart cart-1" href="#">Add card</a>
+        <img class= "imgcard" src="images/2.jpeg" alt="">
+        <h3 class="title" >Mini shaker de fruit</h3>
+        <p>56 KCal</p>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-half" aria-hidden="true"></i>
+         <h3 class="price">7 Dt</h3>
+         <a class="add-cart cart-1"  >Ajouter au panier</a>
      </div>
     <div class="cartimage">
-        <img src="images/3.jpeg" alt="">
-       <h3>Test</h3>
-       <h3>Prix</h3>
-        <a class="add-cart cart-2" href="#">Add card</a>
+        <img class= "imgcard"  src="images/3.jpeg" alt="">
+       <h3 class="title" >Make me healthy</h3>
+       <p>415 Kcal</p>
+       <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+       <h3 class="price">15 Dt</h3>
+        <a class="add-cart cart-2"  >Ajouter au panier</a>
         </div>
    <div class="cartimage">
-    <img src="images/4.jpeg" alt="">
-   <h3>Test</h3>
-   <h3>Prix</h3>
-    <a class="add-cart cart-3" href="#">Add card</a>
+    <img class= "imgcard" src="images/4.jpeg" alt="">
+   <h3 class="title">Shaker de fruit</h3>
+   <p>80 Kcal</p>
+   <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+   <h3 class="price">10 Dt</h3>
+    <a class="add-cart cart-3"  >Ajouter au panier</a>
    </div>
 <div class="cartimage">
-<img src="images/5.jpeg" alt="">
-<h3>Test</h3>
-<h3>Prix</h3>
-<a class="add-cart cart-4" href="#">Add card</a>
+<img class= "imgcard"  src="images/5.jpeg" alt="">
+<h3 class="title">Chiche champi</h3>
+<p>506 Kcal</p>
+<i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+<h3 class="price">20 Dt</h3>
+<a class="add-cart cart-4"  >Ajouter au panier</a>
+</div>
+ <div class="cartimage">
+       <img class= "imgcard" src="images/6.jpeg" alt="">
+       <h3 class="title">Compote de pommes </h3>
+       <p>64 Kcal</p>
+       <i class="fa fa-star" aria-hidden="true"></i>
+         <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+           <h3 class="price">12 Dt</h3>
+          <a class="add-cart cart-5"  >Ajouter au panier</a>
+  </div>
+   <div class="cartimage">
+      <img class= "imgcard" src="images/7.jpeg" alt="">
+       <h3 class="title">Mex'chiken 🔥</h3>
+         <p>633 Kcal</p>
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+         <h3 class="price">25 Dt</h3>
+         <a class="add-cart cart-6"  >Ajouter au panier</a>
 </div>
 <div class="cartimage">
-    <img src="images/6.jpeg" alt="">
-   <h3>Test</h3>
-   <h3>Prix</h3>
-    <a class="add-cart cart-5" href="#">Add card</a>
+        <img class= "imgcard" src="images/8.jpeg" alt="">
+        <h3 class="title">Pita pomme</h3>
+        <p>468 Kcal</p>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+         <i class="fa fa-star" aria-hidden="true"></i>
+         <i class="fa fa-star-o" aria-hidden="true"></i>
+        <h3 class="price">30 Dt</h3>
+         <a class="add-cart cart-7"  >Ajouter au panier</a>
 </div>
-<div class="cartimage">
-   <img src="images/7.jpeg" alt="">
-  <h3>Test</h3>
-  <h3>Prix</h3>
-   <a class="add-cart cart-6" href="#">Add card</a>
-   </div>
-<div class="cartimage">
-<img src="images/8.jpeg" alt="">
-<h3>Test</h3>
-<h3>Prix</h3>
-<a class="add-cart cart-7" href="#">Add card</a>
-</div>
-<div class="cartimage">
-<img src="images/9.jpeg" alt="">
-<h3>Test</h3>
-<h3>Prix</h3>
-<a class="add-cart cart-8" href="#">Add card</a>.
-</div>
-</div>
+ <div class="cartimage">
+                <img class= "imgcard" src="images/9.jpeg" alt="">
+                <h3 class="title">Avo caesar</h3>
+                <p>600 kcal</p>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                <h3 class="price">35 Dt</h3>
+                <a class="add-cart cart-8"  >Ajouter au panier</a>.
+                </div>
+                <div class="cartimage">
+                 <img class= "imgcard" src="images/10.jpeg" alt="">
+                 <h3 class="title">Combo quiche saumon <br> épinard + salade</h3>
+                    <p>483 Kcal</p>
+                 <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <h3 class="price">35 Dt</h3>
+                    <a class="add-cart cart-9"  >Ajouter au panier</a>.
+                 </div>
+                </div>
+ </div>
+
+ <!--Clients-->
+ <div class="backclient">
+<span class="textgold" > <h1 id="clients">Clients satisfaits</h1>  <img src="images/golden.png" alt=""> </span> 
+<div class="testimonial">
+  
+       
+            <div class="col-3">
+            <i class="fa fa-quote-left" aria-hidden="true"></i>
+            <p>lorem Ipsum is simply dummy text of  <br> the printing and typesetting industry.</p>
+             <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <img src="images/profil3.jpeg" alt="">
+            <h3>juliette</h3>
+        </div>
+        <div class="col-3">
+            <i class="fa fa-quote-left" aria-hidden="true"></i>
+            <p>lorem Ipsum is simply dummy text of  <br> the printing and typesetting industry.</p>            
+             <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+            <img src="images/profil.jpg" alt="">
+            <h3>John</h3>
+        </div>
+        <div class="col-3">
+            <i class="fa fa-quote-left" aria-hidden="true"></i>
+            <p>lorem Ipsum is simply dummy text of  <br> the printing and typesetting industry.</p>             
+            <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <img src="images/profil 2.jpg" alt="">
+            <h3>Paul</h3>
+        </div>
+  </div>
 </div>
 
-
-
- <!--Nos services-->
-
- <h1 id= "services">Nos services</h1>
-<div class="prefooter">
-    <div class="rowpre">
-    <div class="col-1">
-        <h2 class="ml3">Téléchargez l'application mobile Healthy food et profitez de nos services en ligne gratuitements </h2>
-    </div>
-    <div class="col-1"> <img src="images/pref.png" alt=""></div>
-</div>
-</div>
 <footer>
         
     <div class="conteneur">   
         <div class="bloc contact">    
            
-            <h3>À propos</h3>
+          
             <img class="logofooter" src="images/logo.png" alt="">
-            <i class="fas fa-envelope"></i><span>contact@Healthyfood.com</span> 
-             <p>Avenue Habib Bourguiba, La Marsa Plage, Tunis, Tunisie.</p>
-            <p>(+216).71.589.546</p>
-             <p>(+216).71.546.545</p>
+            <p>« Plus qu'un simple restaurant, <b>Healthy Food</b> vous garanti des recettes healthy et bio. » <br>
      </div> 
 
 
       <div class="bloc form">    
         <h3>Liens utiles</h3>
          <a class= "lien" href="#histoire">NOTRE HISTOIRE</a> <br>
-        <a class= "lien" href="#produits">NOS PRODUITS</a><br>
-         <a class= "lien" href="#services">NOS SERVICES</a> <br>
+       <a class= "lien" href="#services">NOS SERVICES</a> <br>
+       <a class= "lien" href="#produits">NOS PRODUITS</a><br>
+         <a class= "lien" href="#clients">CLIENTS SATISFAITS</a> <br>
 
 
        </div> 
 
         <div class="bloc socialmedia">    
-          <h3>Nous-contactez</h3>
+          <h3>Contactez-nous</h3>
          <div class="main">
           <ul>
               <li><a href="https://www.facebook.com/" target="_blank"> <img src="images/facebook.png" alt="facebooklogo"></a>
@@ -164,23 +322,29 @@
              <li><a href="https://www.instagram.com/?hl=fr" target="_blank"> <img src="images/instagram.png" alt="facebooklogo"></a>
              </li>
              </ul>
-          </div>
-
-          <form class="formwidth">   
-              <div class="rowbtn"></div>
-            <input type="text"   placeholder="Saisir votre email">
-          <input class="btn" type="submit" value="Envoyer">
+             <div class="contactpar">
+             <p> contact@Healthyfood.com <br>
+                 Avenue Habib Bourguiba, La Marsa Plage, Tunis, Tunisie. <br>
+                 (+216).71.589.546 <br> 
+                 (+216).71.546.545</p>
             </div>
-         </form>
+          </div>
+         <br>
+
+          
 
         </div> 
  </div>
 
-      <div class="copyright">&copy;Bayti immobilier 2021. Conçu avec Html/css </div> 
+      <div class="copyright">&copy;Healthy Food 2021.</div> 
 </footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/e0d7e898b5.js" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="test.js"></script>
+<scrip src="js/bootstrap"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="test.js"></script>
 </body>
 </html>

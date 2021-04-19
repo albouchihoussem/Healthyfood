@@ -13,24 +13,69 @@ body{
     padding: 20px;
 }
 h2 {
-    color: rgba(44, 41, 41, 0.61);
+    color: rgb(87, 83, 83);
     text-align: center;
+    margin-left: -90px;
     margin-top: 20px;
     text-shadow: 2px 2px 5px rgb(121, 138, 138);
+    font-size: 300px;
 }
+li i {
+    font-size: 15px;
+    cursor: pointer;
+}
+/*modal*/
+.modal-body i {
+color: #fff;
+}
+.imagecard{
+    width: 100%;
+    height: 100%;
+}
+
+
+
 /*dark mood*/
 body.dark-theme{
     background-color: #152028;
     padding:0;
     margin:0;
     box-sizing: border-box;
-    color:rgb(255, 255, 255);
+    color:rgb(10, 10, 10);
   }
+  .dark-theme .col-3{ background-color: #ffffff; }
   .dark-theme h1{
-    color: rgb(122, 182, 140);
+    color:  #1f6234;   
 }
 .dark-theme p{
-    color: rgb(165, 165, 165);
+    color: #4e4e4e;  
+}
+.dark-theme h2{
+   text-align: center;
+   margin-left: -90px;
+   margin-top: 20px;
+   text-shadow:none;
+   font-weight: normal;
+    color: #fff;
+    text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 0px #fff,
+    0 0 30px #76e316,
+    0 0 40px #76e316,
+    0 0 50px #76e316,
+    0 0 60px #76e316,
+    0 0 70px #76e316;  
+}
+
+.dark-theme i {
+    color: #95c944;               
+}
+.dark-theme .header {                                 
+ background: radial-gradient(rgb(255, 255, 255), #525252);
+}
+.dark-theme .backclient {
+    background: radial-gradient(rgb(26 28 31), rgb(26 28 31));    
 }
 /**/
 
@@ -49,6 +94,16 @@ nav ul li {
 nav a { text-decoration: none;
     color: black;
 }
+/*panier*/
+.notif{
+    color: white;
+    background-color: tomato;
+    border-radius: 50%;
+    padding: 0.5px 6px;
+    margin-left: -1px;
+    font-size: 12px;   
+}
+
 /*animation navbar text*/
 .ml3 {
     font-weight: 900;
@@ -77,13 +132,14 @@ flex-wrap: wrap;
 .col-2 img {
     max-width: 100%;
     padding: 10px 0 ;
+    margin-top: 40px;
     }
     .col-2 h1{
         font-size: 50px;
        margin: 25px 0;
     }
     /*Bouttons*/
-    .bouton{
+    .btton{
     display: flex;
     justify-content: space-around;
     }
@@ -93,28 +149,35 @@ flex-wrap: wrap;
         align-items: center;
         justify-content: space-around;
       }
-    .btn {
+    .btnn {
         text-decoration: none;
         color: white;
         padding: 10px 30px;
-        width: 140px;
+        width: 190px;
         height: 45px;
         text-align: center;
-        font-size: 15px;
-        font-weight: bold;
-        letter-spacing: 2.5px;
-        color: rgb(255, 255, 255);
-        background-color: #95c944;
+        background-color:#1f6234 ;
         border: none;
         border-radius: 45px;
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
         transition: all 0.5s ease 0s;
         cursor: pointer;
         outline: none;
+        font-family: 'Lobster', cursive;
+        letter-spacing: 2.5px;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+       }
+       a  {
+       text-decoration: none !important;
+    }
+        button .btn {
+            width: 100% !important;
+            color:red !important;
         }
       
-      .btn:hover {
-        background-color: #1f6234;
+      .btnn:hover {
+        background-color: #95c944;
         box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
         color: #fff;
         transform: translateY(-7px);
@@ -128,13 +191,29 @@ flex-wrap: wrap;
       }
 /*Notre histoire*/
 h1{
-    color: rgba(36, 35, 35, 0.61);
+    color: #1f6234;
     text-align: center;
     margin-top: 20px;
-    text-shadow: 2px 2px 5px rgb(121, 138, 138);
-    
+    text-shadow: 2px 2px 5px rgb(28, 36, 26);
+    margin-top: 0px;
+    padding-top: 30px;
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
 }
-
+.histoireback {
+    background-image: url("images/background1.jpg");
+   height: 50rem;
+}
+.histoirepara p {
+    color: rgb(201, 192, 192);
+}
+.textgold {
+    display: block;
+    text-align: center;
+}
+.gold {
+width: 6rem;
+}
 .containerpresent{
 display: flex;
 align-items: center;
@@ -143,8 +222,8 @@ margin-top: 15px;
 }
 
 .healthyimage{
-	height: 20rem;
-	width: 20rem;
+	height: 30rem;
+	width: 30rem;
 	border-radius: 50%;
 	box-shadow: 0 0 25px 0 black;  
 	margin-right: 30px;
@@ -156,14 +235,6 @@ margin-top: 15px;
   opacity:1;
 }
 /**/
-
-
-/*Notre services*/
-
-
-
-
-
 /*cartes*/
 .cartesback {
     background-image: url("images/background2.jpg");
@@ -175,15 +246,27 @@ margin-top: 15px;
     margin-top: 50px;
     }
     .cartimage{
-        margin-right: 20px;
-        margin-left: 20px;
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-bottom: 30px;
         position: relative;
         overflow: hidden;
        
     }
     .cartimage img{
-        width:300px ;
-        height:250px;
+        width:30rem ;
+        height:22rem;
+        border-radius: 20px;
+        opacity: 0.75;
+        
+    }
+    .cartimage img:hover{
+        opacity: 1;
+        transition: 1s;
+    }
+    .cartimage h3 {
+        font-family: 'Lobster', cursive;
+        font-weight: normal;
     }
     .add-cart {
         position: absolute;
@@ -193,8 +276,9 @@ margin-top: 15px;
         opacity: 0;
         cursor: pointer;
         text-align: center;
-        
-    }
+        font-weight: bold;
+        font-size: 15px;
+     }
     
     .cartimage:hover .cart-1,
     .cartimage:hover .cart-2,
@@ -203,17 +287,73 @@ margin-top: 15px;
     .cartimage:hover .cart-5,
     .cartimage:hover .cart-6,
     .cartimage:hover .cart-7,
-    .cartimage:hover .cart-8
+    .cartimage:hover .cart-8,
+    .cartimage:hover .cart-9
+    
     {
-        bottom: 60px;
+        top: 180px;
         opacity: 0.75;
         padding: 10px;
         text-decoration: none;
-        
+        border-radius: 20px;
+        transition: 0.4s;
+     }
+    i {
+        color: rgb(48, 95, 39);
     }
 
 
+/*Nos services*/
+.prefooter img {
+    width: 60rem;
+    
+    bottom: 0px;
+    }
+    .rowpre{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        font-size: 10px;
+    }
+    .col-1 h2 { margin-left: 20px;}
 
+  /*clients*/
+  .rating i {
+      color:goldenrod;
+  }
+ .testimonial{            
+ padding-top: 50px;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+ .backclient{
+    background: radial-gradient(#ffffff, #f9f9f9);    
+ }
+.testimonial .col-3 {
+text-align: center;
+padding:30px 20px;
+box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+cursor:pointer;
+margin-bottom: 40px;
+}
+
+ .testimonial .col-3 img {
+     width:100px;
+     height:100px;
+     margin-top: 20px;
+     border-radius: 50%;
+ }
+ .testimonial .col-3:hover {
+    transform: translateY(-10px);  /* Transition Image */
+    transition: transform 0.5s;   /* Transition time */
+ }
+
+
+
+
+     
  /*-------footer-------*/
 footer{
     background-color: #232323;
@@ -229,7 +369,10 @@ footer{
     .main ul {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+    }
+  .contactpar p {
+        color: rgb(184, 184, 184);
     }
     
     .conteneur {
@@ -248,10 +391,10 @@ footer{
        
     }
     .bloc h3{
-        border-left: 3px solid gray;
-      height: 2%;
+    border-left: 3px solid #95c944;
+    height: 2%;
     padding-left: 8px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     }
     
     
@@ -263,6 +406,7 @@ footer{
         font-size: 25px;
         padding-bottom: 20px;
     }
+
     .contact p {
         padding: 5px 0 ;
         color: rgb(184, 184, 184);
@@ -285,16 +429,14 @@ footer{
         color: rgb(255, 255, 255);
         display: flex;
         justify-content: center;
-        
+        font-size: 17px;
+        margin-top: -25px;            
     }
-    .formwidth input, textarea{
-         padding:15px;
-         width: 200px;
-         font-size: 15px;
+   
+       .logofooter{
+         width: 30rem;
          margin-bottom: 20px;
-     }
-     .logofooter{
-         width: 20rem;
+         margin-top: -19px;
      }  
      
      .bloc , .form a {
@@ -303,31 +445,15 @@ footer{
     font-weight: bold;
     padding: 20px;
 }
+.bloc , .form a:hover {
+color: #1f6234;
+}
+
 .lien{
     padding: 0px 20px;
     word-wrap: normal;
     display: inline-block;
 }
-.prefooter img {
-width: 40rem;
-
-bottom: 0px;
-}
-.rowpre{
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    font-size: 10px;
-}
-.fas{
-    color: blue;
-    font-size: 20px;
-    margin-right: 5px;
-}
-   span{
-       color: white;
-   }
-
 
 
 
