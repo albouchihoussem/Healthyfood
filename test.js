@@ -182,7 +182,7 @@ function purchaseClicked() {
 function addQuantityRomove () {
   totalCart.innerHTML = 
  `<div class="pos">
-  <h4> <b>Total Price   </b>   0 Dt</h4>
+  <h4> <b>Total</b>   0 Dt</h4>
   </div>` 
  
 }
